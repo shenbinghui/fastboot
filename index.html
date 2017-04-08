@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta  charset='utf-8'/>
+    <title>My First Electron App</title>
+    <link rel='stylesheet' href='./css/main.css'/>
+</head>
+
+<body>
+    <header>
+        <p>mifidata fastboot擦除</p>
+    </header>
+    <div class='content'>
+        <article>
+            <span>cmd:</span>
+            <input type='text' id="fastboot_txt"  value="adb shell reboot-bootloader" />
+            <input id='fastboot_btn' type="button" value="执行" />
+
+            <div class='rs' id='rs'>
+            </div>
+        </article>
+        <aside>
+            <p>commond:</p>
+            <ul>
+                <li>adb shell reboot-bootloader</li>
+                <li>fastboot erase boot  -i 0x161c</li>
+                <li>fastboot erase sbl2 -i 0x161c</li>
+                <li>fastboot reboot -i 0x161c</li>
+            </ul>
+        </aside>
+    <div>
+    <footer></footer>
+
+    <script type='text/javascript' src='./js/main.js'></script>
+</body>
+
+</html>
